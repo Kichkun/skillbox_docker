@@ -1,5 +1,6 @@
 FROM node
 
+RUN npm install babel-cli -S
 RUN mkdir /flatris
 COPY package.json /flatris
 WORKDIR /flatris
